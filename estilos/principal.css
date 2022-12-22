@@ -1,0 +1,108 @@
+.encabezado{
+    background-image: url(../imagenes/principal.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 6vh;
+}
+.encabezado__titulo{
+    font-size: 2.8em;
+}
+.encabezado__subtitulo{
+    font-size: 2em;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 6vh;
+    width: 99vw;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+   
+
+}
+.logo{
+    height: 50px;
+}
+.lista__icono{
+    padding: 15px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.seccion{
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 150px;
+    /* width: 98vw; */
+    
+}
+.seccion__cuerpo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 100px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative
+
+}
+.contenedor__imagen{
+    width: 100%;
+}
+.contenedor__corazon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.6em;
+    color: white;
+    cursor: pointer;
+}
+.seccion__inscripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(244, 203, 128);
+    padding: 80px;
+}
+.inscripcion__texto{
+    font-size: 2em;
+}
+.inscripcion{
+    width: 200px;
+    height: 30px;
+}
+.inscripcion__boton{
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    border: 1px solid orange;
+    background-color: beige;
+}

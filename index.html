@@ -9,7 +9,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 
         body{
-            background-image: url(./imagenes/principal.png);
+            background-image: url(./imagenes/portada.png);
+         
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -24,21 +25,28 @@
             /* width: 500px;
             height: 400px;
             background-color: rgba(240, 248, 255, 0.384);
-            backdrop-filter: blur(10px); */
-            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px; */
             position: relative;
             left: 5px;
             font-size: 3.9em;
-            color: red;
+            color: rgb(29, 172, 255);
             text-transform: uppercase;
             font-family: 'Rubik Vinyl', cursive;
             letter-spacing: 5px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0.1em 0.1em 0.2em black;
         }
     </style>
     <script>
         window.onload= function(){
             let ventana = document.querySelector("div").addEventListener("click",abreNueva);
+            function abreNueva(){
+                window.location.href="adicional.html";
+            }
         }
     </script>
 </head>
