@@ -1,10 +1,10 @@
 .encabezado{
-    background-image: url(../imagenes/principal.png);
+    background-image: url(../imagenes/portada4.jpg);
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
