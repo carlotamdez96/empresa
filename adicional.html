@@ -10,6 +10,47 @@
     <link rel="stylesheet" href="./estilos/principal.css">
     <script>
         //Cuando haga click en el corazon se cambiará de color de fondo el corazon, y se guardará en un array
+
+        window.onload=function(){
+            var favoritos=[];
+            var corazones = document.querySelectorAll(".fa-heart");
+            // (function(){
+           
+            for (let corazon of corazones) {
+                if(corazon== corazones.item(0)){
+                    corazon.addEventListener("click",muestraFavoritos);
+                }else{
+                    corazon.addEventListener("click",añadirAFavoritos);
+                    function añadirAFavoritos(){
+                        corazon.style.color="red";
+                        favoritos.push(corazon.parentNode);
+                    }
+                }
+            }
+            function muestraFavoritos(){
+
+                var menu = document.querySelectorAll(".lista__icono").item(0);
+
+                // var divGeneral = document.createElement("div");
+                // divGeneral.classList.add="menu__favoritos";
+                // menu.appendChild(divGeneral);
+                
+                
+                
+                for (let favorito of favoritos) {
+                    menu.innerHTML="";
+                    menu.innerHTML+=`
+                        <div class="favoritos__elemento">
+                        
+                        ${favorito.children[1].textContent} 
+                        </div>`
+                        
+                }
+               
+            }
+        // })
+        }
+        
     </script>
 
 </head>
