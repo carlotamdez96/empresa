@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    /* width: 100%; */
     position: relative;
     top: 6vh;
 }
@@ -26,7 +27,7 @@
     justify-content: space-between;
     padding: 10px;
     height: 6vh;
-    width: 99vw;
+    width: 100%;
     background-color: blueviolet;
     position: fixed;
     top: 0;
@@ -34,6 +35,7 @@
    
 
 }
+
 .logo{
     height: 50px;
 }
@@ -41,6 +43,7 @@
     padding: 15px;
     font-size: 1.4em;
     cursor: pointer;
+    
 }
 .seccion{
     position: relative;
